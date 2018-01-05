@@ -1,0 +1,28 @@
+Test #1
+"""
+a b 4
+a c 10
+b d 9
+c d 5
+"""
+
+
+Test #2
+"""
+a b 5
+a c 5
+a d 11
+a f 8
+a e 6
+b d 5
+c f 5
+d g 10
+g i 14
+f h 8
+h i 11
+b e 4
+c e 3
+e g 5
+e h 2
+e i 5
+"""
