@@ -1,0 +1,18 @@
+hagread-only@ubuntuPC:~/Desktop$ chmod -rwx HelloWorld.sh
+hagread-only@ubuntuPC:~/Desktop$ cat HelloWorld.sh
+cat: HelloWorld.sh: Permission denied
+hagread-only@ubuntuPC:~/Desktop$ echo "echo World!" >> HelloWorld.sh
+bash: HelloWorld.sh: Permission denied
+hagread-only@ubuntuPC:~/Desktop$ ./HelloWorld.sh
+bash: ./HelloWorld.sh: Permission denied
+hagread-only@ubuntuPC:~/Desktop$ chmod +rwx HelloWorld.sh
+hagread-only@ubuntuPC:~/Desktop$ echo "echo World!" >> HelloWorld.sh
+hagread-only@ubuntuPC:~/Desktop$ cat lab2.sh
+#!/usr/bin/env bash
+echo Hello
+echo World!
+hagread-only@ubuntuPC:~/Desktop$ ./lab2.sh
+Hello
+World!
+hagread-only@ubuntuPC:~/Desktop$ exit
+

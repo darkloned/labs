@@ -1,0 +1,40 @@
+hagread-only@ubuntuPC:~/Desktop/MAI/git/MAI_labs/lab21$ tree
+.
+├── a.txt
+├── b.txt
+├── dir1
+│   └── super.duper
+├── dir2
+│   ├── a.out
+│   ├── prog.c
+│   └── prog.c.swp
+├── ex
+├── extensions.sh
+├── f.tmp.swp
+└── xt.bc
+
+2 directories, 10 files
+hagread-only@ubuntuPC:~/Desktop/MAI/git/MAI_labs/lab21$ ./extensions.sh
+bc c duper out sh swp txt 
+hagread-only@ubuntuPC:~/Desktop/MAI/git/MAI_labs/lab21$ ./extensions.sh -p dir1
+duper 
+hagread-only@ubuntuPC:~/Desktop/MAI/git/MAI_labs/lab21$ ./extensions.sh --path dir2 -1
+c
+out
+swp
+hagread-only@ubuntuPC:~/Desktop/MAI/git/MAI_labs/lab21$ ./extensions.sh --help
+Usage: ./extensions.sh [OPTION]...
+List all unique extensions in the DIR and its subdirectories (the current directory by default).
+Sort entries alphabetically.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -p, --path 	 specify directory for listing
+  -1         	 list one entry per line
+      --help 	 display this help and exit
+      --version  output version information and exit
+hagread-only@ubuntuPC:~/Desktop/MAI/git/MAI_labs/lab21$ ./extensions.sh --version
+extensions.sh 1.0
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Roman Migalev.

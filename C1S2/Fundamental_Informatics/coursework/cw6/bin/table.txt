@@ -1,0 +1,10 @@
+1	Ivanov		AMD	4	Windows
+2	Ivanova		AMD	4	Linux
+3	Petrov		Intel	2	Linux
+4	Petrova		Intel	4	Linux
+5	Orlov		AMD	2	Linux
+6	Orlova		Intel	4	Windows
+7	Egorov		Intel	4	Windows
+8	Egorova		Intel	4	Linux
+9	Kozlov		AMD	2	Linux
+10	Kozlova		Intel	4	Windows

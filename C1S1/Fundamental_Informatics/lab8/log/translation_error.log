@@ -1,0 +1,12 @@
+hagread-only@ubuntuPC:~/Desktop/MAI/labs/lab8/src$ gcc -E translation_error.c -o translation.log
+hagread-only@ubuntuPC:~/Desktop/MAI/labs/lab8/src$ gcc -S translation_error.c
+translation_error.c: In function ‘main’:
+translation_error.c:5:2: warning: implicit declaration of function ‘fur’ [-Wimplicit-function-declaration]
+  fur (int i = 0; i < 5; ++i)
+  ^
+translation_error.c:5:7: error: expected expression before ‘int’
+  fur (int i = 0; i < 5; ++i)
+       ^
+translation_error.c:6:3: error: expected ‘;’ before ‘print’
+   print("%d", i);
+   ^

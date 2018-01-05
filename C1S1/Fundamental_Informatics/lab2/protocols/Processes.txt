@@ -1,0 +1,30 @@
+hagread-only@ubuntuPC:~/Desktop$ ping ya.ru
+PING ya.ru (93.158.134.3) 56(84) bytes of data.
+64 bytes from www.yandex.ru (93.158.134.3): icmp_seq=1 ttl=59 time=4.77 ms
+64 bytes from www.yandex.ru (93.158.134.3): icmp_seq=2 ttl=59 time=3.76 ms
+^Z
+[1]+  Stopped                 ping ya.ru
+hagread-only@ubuntuPC:~/Desktop$ jobs
+[1]+  Stopped                 ping ya.ru
+hagread-only@ubuntuPC:~/Desktop$ kill %1
+hagread-only@ubuntuPC:~/Desktop$ jobs
+[1]+  Terminated              ping ya.ru
+hagread-only@ubuntuPC:~/Desktop$ ping ya.ru
+PING ya.ru (93.158.134.3) 56(84) bytes of data.
+64 bytes from www.yandex.ru (93.158.134.3): icmp_seq=1 ttl=59 time=3.62 ms
+64 bytes from www.yandex.ru (93.158.134.3): icmp_seq=2 ttl=59 time=4.76 ms
+^Z
+[1]+  Stopped                 ping ya.ru
+hagread-only@ubuntuPC:~/Desktop$ ps
+  PID TTY          TIME CMD
+29598 pts/8    00:00:00 bash
+29716 pts/8    00:00:00 ping
+29717 pts/8    00:00:00 ps
+hagread-only@ubuntuPC:~/Desktop$ kill -9 29716
+hagread-only@ubuntuPC:~/Desktop$ ps
+  PID TTY          TIME CMD
+29598 pts/8    00:00:00 bash
+29721 pts/8    00:00:00 ps
+[1]+  Killed                  ping ya.ru
+hagread-only@ubuntuPC:~/Desktop$ exit
+

@@ -1,0 +1,54 @@
+hagread-only@ubuntuPC:~/Desktop/MAI/labs/lab10$ gcc -g lab10.c -o lab10.out
+hagread-only@ubuntuPC:~/Desktop/MAI/labs/lab10$ gdb lab10.out
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from lab10.out...done.
+(gdb) list
+1	#include <stdio.h>
+2	
+3	int foo()
+4	{
+5		return 1;
+6	}
+7	
+8	int bar(int x)
+9	{
+10		return foo();
+(gdb) break 15
+Breakpoint 1 at 0x4005ef: file lab10.c, line 15.
+(gdb) run
+Starting program: /home/hagread-only/Desktop/MAI/labs/lab10/lab10.out 
+
+Breakpoint 1, main () at lab10.c:16
+16		scanf("%d", &x);
+(gdb) set var x = 5
+(gdb) next
+11
+18		bar(x);
+(gdb) step
+bar (x=11) at lab10.c:10
+10		return foo();
+(gdb) step
+foo () at lab10.c:5
+5		return 1;
+(gdb) bt
+#0  foo () at lab10.c:5
+#1  0x00000000004005d6 in bar (x=11) at lab10.c:10
+#2  0x000000000040060f in main () at lab10.c:18
+(gdb) continue
+Continuing.
+[Inferior 1 (process 19898) exited normally]
+(gdb) quit
+

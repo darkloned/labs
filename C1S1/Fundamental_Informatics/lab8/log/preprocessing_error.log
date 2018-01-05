@@ -1,0 +1,9 @@
+hagread-only@ubuntuPC:~/Desktop/MAI/labs/lab8/src$ gcc -E preprocessing_error.c 
+# 1 "preprocessing_error.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 1 "<command-line>" 2
+# 1 "preprocessing_error.c"
+preprocessing_error.c:1:19: fatal error: stdia.h: No such file or directory
+compilation terminated.

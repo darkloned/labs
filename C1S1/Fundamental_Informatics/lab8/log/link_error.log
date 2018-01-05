@@ -1,0 +1,6 @@
+hagread-only@ubuntuPC:~/Desktop/MAI/labs/lab8/src$ gcc -E link_error.c -o link.log
+hagread-only@ubuntuPC:~/Desktop/MAI/labs/lab8/src$ gcc -S link_error.c
+hagread-only@ubuntuPC:~/Desktop/MAI/labs/lab8/src$ gcc link_error.c -o link
+/tmp/ccL81XQU.o: In function `main':
+link_error.c:(.text+0xa): undefined reference to `print_name'
+collect2: error: ld returned 1 exit status

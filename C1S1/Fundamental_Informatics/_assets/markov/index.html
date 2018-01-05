@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Markov JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/remodal.css" rel="stylesheet" type="text/css"/>
+        <link href="css/modals-style.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic' rel='stylesheet' type='text/css'/>
+        <script data-main=js/app src=js/require.js></script>
+    </head>
+    <body>
+        <div id="content">
+            <h1 id="header">Corrupted Markov</h1>
+            <div id="top_content">
+                <div class="left">
+                    <p>Установить:</p>
+                    <input id="set" tabindex="1" placeholder="Входное слово" />
+                </div>
+                <div class="right">
+                    <p>Результат:</p>
+                    <input id="result" tabindex="2" placeholder="Выходное слово" />
+                </div>
+            </div>
+            <div id="rulse_up">
+                <div id="left_rules_up">
+                    <button id="test" class="middle_buttons" style="float: left; margin-left: 8px;" data-reveal-id="tests" tabindex="10">Тесты</button>
+                    <button id="gear"></button>
+                </div>
+                <div id="right_rules_up">
+                    <div id="help">
+                        <span>А что тут собственно настраивать?</span>
+                    </div>
+                    <button id="step" class="middle_buttons" tabindex="9">Шаг</button>
+                    <button id="stop" class="middle_buttons" tabindex="8">Стоп</button>
+                    <select id="speed" class="middle_buttons" tabindex="7">
+                        <option value="0">Моментально</option>
+                        <option value="200">Быстро</option>
+                        <option selected value="500">Медленно</option>
+                        <option value="1000">Очень медлено</option>
+                    </select>
+                    <button id="start" class="middle_buttons" tabindex="6">Старт</button>
+                    <button id="reset" class="middle_buttons" tabindex="5">Сброс</button>
+                </div>
+            </div>
+            <div id="middle_content">
+                <!-- Left -->
+                <div class="middle_blocks">
+                    <p id="rules_p">Правила:</p>
+                    <textarea id="rules"></textarea>
+                </div>
+                <!-- Right -->
+                <div class="middle_blocks">
+                    <div id="state_block">
+                        <p>Состояние:</p>
+                        <textarea disabled id="state" tabindex="3"></textarea>
+                    </div>
+                    <div id="history_block">
+                        <p>История:</p>
+                        <div id="history">
+                            <div class="history_notef" id="top_history">
+                                <span class="hist_idf">N</span>
+                                <span class="hist_rulef">Правило</span>
+                                <span class="hist_resultf">Результат</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODALS -->
+        <div id="test_modal" class="remodal" data-remodal-id="tests">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <h1>Проверка на тестах!</h1>
+            <br>
+            <div id="all_tests">
+                <div class="some_test">
+                    <textarea class='test_textarea' data-testid='1'></textarea>
+                    <textarea class='test_textarea' data-resultid='1' disabled></textarea>
+                    <div class="dell_element"></div>
+                </div>
+            </div>
+            <div id="add_test"></div>
+            <br>
+            <button data-remodal-action="cancel" class="middle_buttons">Cancel</button>
+            <button id='tests_start' class="middle_buttons">GO</button>
+        </div>
+    </body>
+</html>

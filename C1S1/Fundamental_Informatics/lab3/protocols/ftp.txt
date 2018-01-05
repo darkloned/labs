@@ -1,0 +1,46 @@
+hagread-only@ubuntuPC:~$ ftp kuantan
+Connected to kuantan.zzz.umc8.ru.
+220 kuantan.zzz.umc8.ru FTP server (Version 6.00LS) ready.
+Name (kuantan:hagread-only): 168082
+331 Password required for 168082.
+Password:
+230 User 168082 logged in.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> cd ./Desktop/
+250 CWD command successful.
+ftp> pwd
+257 "/stud/168082/Desktop" is current directory.
+ftp> lcd ~/Desktop
+Local directory now /home/hagread-only/Desktop
+ftp> ls
+200 PORT command successful.
+150 Opening ASCII mode data connection for '/bin/ls'.
+total 1
+-rw-------  1 168082  stud  204 12 Sep 10:40 helloworld.asm
+226 Transfer complete.
+ftp> put
+(local-file) testweb.sh
+(remote-file) testweb.sh
+local: testweb.sh remote: testweb.sh
+200 PORT command successful.
+150 Opening BINARY mode data connection for 'testweb.sh'.
+226 Transfer complete.
+87 bytes sent in 0.00 secs (1.4556 MB/s)
+ftp> !cat testweb.sh
+#!/bin/bash
+mplayer -vo caca -tv device=/dev/video0:fps=10 -autosync 30 -nosound tv://
+ftp> delete testweb.sh
+250 DELE command successful.
+ftp> get
+(remote-file) helloworld.asm
+(local-file) helloworld.asm
+local: helloworld.asm remote: helloworld.asm
+200 PORT command successful.
+150 Opening BINARY mode data connection for 'helloworld.asm' (204 bytes).
+226 Transfer complete.
+204 bytes received in 0.00 secs (437.8434 kB/s)
+ftp> exit
+221 Goodbye.
+hagread-only@ubuntuPC:~$ exit
+

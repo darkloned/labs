@@ -1,0 +1,21 @@
+hagread-only@ubuntuPC:~$ cd ./Desktop/
+hagread-only@ubuntuPC:~/Desktop$ mkdir dir
+hagread-only@ubuntuPC:~/Desktop$ cd ./dir
+hagread-only@ubuntuPC:~/Desktop/dir$ echo привет > file.txt
+hagread-only@ubuntuPC:~/Desktop/dir$ iconv -f utf8 -t cp866 file.txt -o garbage.txt
+hagread-only@ubuntuPC:~/Desktop/dir$ cat garbage.txt
+�ਢ��
+hagread-only@ubuntuPC:~/Desktop/dir$ iconv -f cp866 -t utf8 garbage.txt -o newfile.txt
+hagread-only@ubuntuPC:~/Desktop/dir$ cat newfile.txt 
+привет
+hagread-only@ubuntuPC:~/Desktop/dir$ rm *
+hagread-only@ubuntuPC:~/Desktop/dir$ echo hello > unix.txt
+hagread-only@ubuntuPC:~/Desktop/dir$ unix2dos -n unix.txt dos.txt
+unix2dos: converting file unix.txt to file dos.txt in DOS format ...
+hagread-only@ubuntuPC:~/Desktop/dir$ dos2unix -n dos.txt unix_again.txt
+dos2unix: converting file dos.txt to file unix_again.txt in Unix format ...
+hagread-only@ubuntuPC:~/Desktop/dir$ du -b *.txt ## лишний байт переноса в win
+7	dos.txt
+6	unix_again.txt
+6	unix.txt
+hagread-only@ubuntuPC:~/Desktop/dir$ exit

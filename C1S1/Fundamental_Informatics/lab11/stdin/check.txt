@@ -1,0 +1,28 @@
+0x0AF1 xyz+0xAZ78
+570xaC7 0x47af
+
+   7x0Ab   0x00a5
+
+---
+0xDEADC0DE / 0xcafebabe= =0xdEAdbEEf
+THE END.
+
+
+
+
+Oh, I was joking: 0x1
+
+
+
+
+
+{0xAF1, 0x47af, 0xa5, 0xDEADCODE, 0xcafebabe, 0xdEAdbEEf, 0x1}
+{1 A f 7 5 E 0 D E e a e a f E d E 1
+1 + 10 + 15 + 7 + 5 + 14 + 13 + 14 + 14 + 10 + 14 + 10 + 15 + 14 + 13 + 14 + 1 == 184 == 0xB8}
+
+A 10
+B 11
+C 12
+D 13
+E 14
+F 15

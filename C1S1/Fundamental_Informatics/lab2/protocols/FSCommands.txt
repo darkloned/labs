@@ -1,0 +1,42 @@
+hagread-only@ubuntuPC:~$ cd ./Desktop/lab2
+hagread-only@ubuntuPC:~/Desktop/lab2$ pwd
+/home/hagread-only/Desktop/lab2
+hagread-only@ubuntuPC:~/Desktop/lab2$ touch test_touch.txt
+hagread-only@ubuntuPC:~/Desktop/lab2$ ls
+lab2.sh  LICENSE.md  README.md  test_touch.txt
+hagread-only@ubuntuPC:~/Desktop/lab2$ rm test_touch.txt
+hagread-only@ubuntuPC:~/Desktop/lab2$ ls
+lab2.sh  LICENSE.md  README.md
+hagread-only@ubuntuPC:~/Desktop/lab2$ mkdir users
+hagread-only@ubuntuPC:~/Desktop/lab2$ mkdir ./users/{0..5}_machine
+hagread-only@ubuntuPC:~/Desktop/lab2$ tree
+.
+├── lab2.sh
+├── LICENSE.md
+├── README.md
+└── users
+    ├── 0_machine
+    ├── 1_machine
+    ├── 2_machine
+    ├── 3_machine
+    ├── 4_machine
+    └── 5_machine
+
+7 directories, 3 files
+hagread-only@ubuntuPC:~/Desktop/lab2$ cd ./users
+hagread-only@ubuntuPC:~/Desktop/lab2/users$ echo hello > ../test.txt
+hagread-only@ubuntuPC:~/Desktop/lab2/users$ cat ../test.txt
+hello
+hagread-only@ubuntuPC:~/Desktop/lab2/users$ echo world >> ../test.txt
+hagread-only@ubuntuPC:~/Desktop/lab2/users$ cat ../test.txt
+hello
+world
+hagread-only@ubuntuPC:~/Desktop/lab2/users$ mkdir 1337_machine
+hagread-only@ubuntuPC:~/Desktop/lab2/users$ rm -r ./?_machine
+hagread-only@ubuntuPC:~/Desktop/lab2/users$ ls
+1337_machine
+hagread-only@ubuntuPC:~/Desktop/lab2/users$ cd ..
+hagread-only@ubuntuPC:~/Desktop/lab2$ rm -r *e*
+hagread-only@ubuntuPC:~/Desktop/lab2$ ls
+lab2.sh  LICENSE.md  README.md
+hagread-only@ubuntuPC:~/Desktop/lab2$ exit
