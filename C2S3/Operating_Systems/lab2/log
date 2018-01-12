@@ -1,0 +1,12 @@
+roman@kubuntu:~/Documents/MAI/git/labs/C2S3/Operating_Systems/lab2$ gcc -std=c99 -Wall -pedantic src/lab2.c -o bin/lab2
+roman@kubuntu:~/Documents/MAI/git/labs/C2S3/Operating_Systems/lab2$ bin/lab2 linux
+roman@kubuntu:~/Documents/MAI/git/labs/C2S3/Operating_Systems/lab2$ gcc -std=c99 -Wall -pedantic src/lab2.c -o bin/lab2
+roman@kubuntu:~/Documents/MAI/git/labs/C2S3/Operating_Systems/lab2$ bin/lab2 linux
+roman@kubuntu:~/Documents/MAI/git/labs/C2S3/Operating_Systems/lab2$ ls out
+linux1.txt  linux2.txt  linux3.txt  linux4.txt  linux5.txt
+roman@kubuntu:~/Documents/MAI/git/labs/C2S3/Operating_Systems/lab2$ cat out/*
+l
+i
+n
+u
+x
