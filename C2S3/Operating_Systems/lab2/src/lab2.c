@@ -1,5 +1,5 @@
 /*
- * Created by h3ll_ow0rld.
+ * Created by darkloned.
  * Task 27.
  */
 
