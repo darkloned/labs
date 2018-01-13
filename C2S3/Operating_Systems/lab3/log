@@ -1,0 +1,34 @@
+darkloned@github:~/labs/C2S3/Operating_Systems/lab3$ make
+rm bin/lab3 2> /dev/null
+gcc -std=c99 -Wall -pedantic -pthread -Iinclude src/* -o bin/lab3
+==========
+bin/lab3
+Enter graph order: 6
+Enter adjacency matrix:
+0 0 1 0 0 0
+0 0 1 1 0 0
+0 0 0 0 0 1
+1 0 0 0 0 1 
+1 0 0 0 0 0
+0 0 0 0 1 0
+Enter start vertex: 3
+
+Thread created [TID: 140008770668288]
+Path from 3 to 2: no path
+
+Thread created [TID: 140008745490176]
+Path from 3 to 5: 3 6 5 
+
+Thread created [TID: 140008753882880]
+Path from 3 to 4: no path
+
+Thread created [TID: 140008762275584]
+Path from 3 to 3: already here
+
+Thread created [TID: 140008779060992]
+Path from 3 to 1: 3 6 5 1 
+
+Thread created [TID: 140008737097472]
+Path from 3 to 6: 3 6 
+
+==========
