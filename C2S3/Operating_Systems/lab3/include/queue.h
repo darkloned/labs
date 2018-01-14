@@ -1,3 +1,6 @@
+#ifndef QUEUE_H
+#define QUEUE_H
+
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -10,47 +13,13 @@ typedef struct Queue
 
 } Queue;
 
-Queue* newQueue(int poolsize)
-{
-	Queue* q = (Queue*) malloc(sizeof(Queue));
+extern Queue* newQueue(int poolsize);
 
-	q->pool  = malloc(poolsize * sizeof(int));
-	
-	q->size  = 0;
-	q->front = 0;
-	q->back  = 0;
+extern bool isEmpty(Queue *q);
 
-	return q;
-}
+extern void push(Queue* q, int v);
+extern int pop(Queue* q);
 
-bool isEmpty(Queue* q)
-{
-	return q->size == 0;
-}
+extern void deleteQueue(Queue* q);
 
-// not failsafe functions below
-
-void push(Queue* q, int v)
-{
-	q->back = isEmpty(q) ? q->front : (q->back + 1) % ARRAYSIZE(q->pool);
-	q->pool[q->back] = v;
-
-	q->size++;
-}
-
-int pop(Queue* q)
-{
-	int v = q->pool[q->front];
-
-	q->front = (q->front + 1) % ARRAYSIZE(q->pool);
-
-	q->size--;
-
-	return v;
-}
-
-void deleteQueue(Queue* q)
-{
-	free(q->pool);
-	free(q);
-}
+#endif
