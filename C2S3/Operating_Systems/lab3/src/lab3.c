@@ -3,6 +3,8 @@
  * Task 21:
  *  Using BFS find the shortest path in the oriented graph.
  *  Explore multithreading (one thread for each pair [given vertex; random vertex]).
+ * 
+ *  See log file for usage example.
  */ 
 
 #include "bfs.h"

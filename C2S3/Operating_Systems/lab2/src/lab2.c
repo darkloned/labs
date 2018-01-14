@@ -1,6 +1,11 @@
 /*
  * Created by darkloned.
- * Task 27.
+ * Task 27:
+ *  Managing system processes and using pipes.
+ *  Get string S as a parameter. Create N child processes,
+ *  pass them a filename and S[i] character to write it out.
+ *
+ *  See log file for usage example.
  */
 
 #include <stdio.h>
