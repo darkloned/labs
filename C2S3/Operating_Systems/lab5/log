@@ -1,0 +1,17 @@
+darkloned@github:~/labs/C2S3/Operating_Systems/lab5$ make
+rm -f bin/lab5stc
+rm -f bin/lab5dyn
+rm -f lib/stack.so
+gcc -std=c99 -Wall -Iinclude src/static/* -o bin/lab5stc
+====STATIC===
+bin/lab5stc
+42.42420
+Stack: 1.61803 2.71828 3.14159 
+=============
+gcc -std=c99 -Wall -shared -o lib/stack.so -fPIC -Iinclude src/static/stack.c
+gcc -std=c99 -Wall -Iinclude src/dynamic/* -o bin/lab5dyn -ldl
+===DYNAMIC===
+bin/lab5dyn
+42.42420
+Stack: 1.61803 2.71828 3.14159 
+=============
