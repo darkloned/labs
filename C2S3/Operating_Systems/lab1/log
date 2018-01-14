@@ -1,0 +1,15 @@
+darkloned@github:~/labs/C2S3/Operating_Systems/lab1$ make
+rm -f bin/lab1
+rm -f out/*
+gcc -std=c99 -Wall -pedantic -Iinclude src/* -o bin/lab1
+==========
+bin/lab1
+ProcessID: 21962
+file.txt size: 21 bytes
+Current date and time: Sun Jan 14 16:50:53 2018
+
+Hello, World!
+==========
+darkloned@github:~/labs/C2S3/Operating_Systems/lab1$ cat out/file.txt 
+Hello, World!
+World!
