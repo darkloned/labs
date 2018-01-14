@@ -5,6 +5,8 @@
  *  "Task 9-static" sources and use it
  *  during runtime, loading it into
  *  memory via system calls.
+ *
+ * See log file for demonstration of working.
  */
 
 #include <dlfcn.h>

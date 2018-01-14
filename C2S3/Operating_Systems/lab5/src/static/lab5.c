@@ -3,6 +3,8 @@
  * Task 9-static:
  *  Implement stack library and use it
  *  during compile time in the linking phase.
+ *
+ * See log file for demonstration of working.
  */
 
 #include "stack.h"
