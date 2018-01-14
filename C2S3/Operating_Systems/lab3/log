@@ -1,5 +1,5 @@
 darkloned@github:~/labs/C2S3/Operating_Systems/lab3$ make
-rm bin/lab3 2> /dev/null
+rm -f bin/lab3
 gcc -std=c99 -Wall -pedantic -pthread -Iinclude src/* -o bin/lab3
 ==========
 bin/lab3

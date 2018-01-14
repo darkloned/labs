@@ -10,9 +10,8 @@ all: clean execute
 $(EXECUTABLE):
 	$(CC) $(CSTD) $(CFLAGS) $(INCLUDE) $(SOURCES) -o $@
 
-# remove if exists
 clean:
-	rm bin/lab3 2> /dev/null
+	rm -f bin/lab3
 
 execute: $(EXECUTABLE)
 	@echo "=========="
