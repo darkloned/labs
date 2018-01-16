@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 	double (*pop)(Stack* s);
 	void (*deleteStack)(Stack* s);
 
-	void* handle = dlopen("lib/stack.so", RTLD_LAZY);
+	void* handle = dlopen("lib/stack.so", RTLD_LAZY); // returns descriptor
 
 	if (!handle)
 	{
