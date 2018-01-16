@@ -63,6 +63,7 @@ void* printShortestPath(void* Args)
 
 	free(args);
 
+	pthread_detach(pthread_self());
 	pthread_exit(NULL);
 
 	return NULL;
