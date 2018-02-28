@@ -1,0 +1,72 @@
+darkloned@github:~/labs/C2S3/Operating_Systems/lab6$ ./Client 15
+Usage: ./Client [ID] [server port]
+
+darkloned@github:~/labs/C2S3/Operating_Systems/lab6$ ./Client 15 4020
+Bank client started.
+
+Available requests:
+1) Balance
+2) Put
+3) Withdraw
+4) Transfer
+5) Quit
+
+Request ID: 2
+Amount of credits to put: 500
+Done.
+
+Request ID: 3
+Amount of credits to withdraw: 1000
+Rejected. Low balance.
+
+Request ID: abc
+Unknown request. Please try again.
+
+Request ID: 100500
+Unknown request. Please try again.
+
+Request ID: 4
+Amount of credits to transfer: 100
+Target bank: 4020
+Target client: 15
+Done.
+
+Request ID: 1
+Balance: 500.00 credits.
+
+Request ID: 2
+Amount of credits to put: 127.8964324
+Done.
+
+Request ID: 1
+Balance: 627.90 credits.
+
+Request ID: 4
+Amount of credits to transfer: 600
+Target bank: 4040
+Target client: 15
+Reply from target bank: Done.
+
+Request ID: 4
+Amount of credits to transfer: 50
+Target bank: 4040
+Target client: 15
+Rejected. Low balance.
+
+Request ID: 4
+Amount of credits to transfer: 10
+Target bank: 4020
+Target client: 26
+Done.
+
+Request ID: 4
+Amount of credits to transfer: 17.8
+Target bank: 4040
+Target client: 26
+Reply from target bank: Done.
+
+Request ID: 1
+Balance: 0.10 credits.
+
+Request ID: 5
+Quit.

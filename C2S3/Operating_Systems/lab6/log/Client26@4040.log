@@ -1,0 +1,24 @@
+darkloned@github:~/labs/C2S3/Operating_Systems/lab6$ ./Client 26 4040
+Bank client started.
+
+Available requests:
+1) Balance
+2) Put
+3) Withdraw
+4) Transfer
+5) Quit
+
+Request ID: 1
+Balance: 27.80 credits.
+
+Request ID: 4
+Amount of credits to transfer: 15
+Target bank: 4040
+Target client: 15
+Done.
+
+Request ID: 1
+Balance: 12.80 credits.
+
+Request ID: 5 
+Quit.

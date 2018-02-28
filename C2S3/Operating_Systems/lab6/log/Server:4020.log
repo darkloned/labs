@@ -1,0 +1,51 @@
+darkloned@github:~/labs/C2S3/Operating_Systems/lab6$ ./Server 4020
+Bank server started.
+
+Packet #1: client ID 15.
+Put 500 credits to client ID 15.
+
+Packet #2: client ID 15.
+Withdraw 1000 credits... Rejected.
+
+Packet #3: client ID 15.
+Unknown request.
+
+Packet #4: client ID 15.
+Transfer 100 credits to 15@4020... OK.
+Put 100 credits to client ID 15.
+
+Packet #5: client ID 15.
+Balance status sent.
+
+Packet #6: client ID 15.
+Put 127.9 credits to client ID 15.
+
+Packet #7: client ID 15.
+Balance status sent.
+
+Packet #8: client ID 15.
+Transfer 600 credits to 15@4040... OK.
+
+Packet #9: client ID 15.
+Transfer 50 credits to 15@4040... Rejected.
+
+Packet #10: client ID 15.
+Transfer 10 credits to 26@4020... OK.
+Put 10 credits to client ID 26.
+
+Packet #11: client ID 15.
+Transfer 17.8 credits to 26@4040... OK.
+
+Packet #12: client ID 15.
+Balance status sent.
+
+Packet #1: client ID 26.
+Balance status sent.
+
+Packet #2: client ID 26.
+Transfer 10 credits to 26@4040... OK.
+
+Packet #3: client ID 26.
+Balance status sent.
+
+^C

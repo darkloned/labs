@@ -1,0 +1,26 @@
+darkloned@github:~/labs/C2S3/Operating_Systems/lab6$ ./Server 4040
+Bank server started.
+
+Packet #8: client ID 15.
+Put 600 credits to client ID 15.
+
+Packet #11: client ID 15.
+Put 17.8 credits to client ID 26.
+
+Packet #2: client ID 26.
+Put 10 credits to client ID 26.
+
+Packet #1: client ID 26.
+Balance status sent.
+
+Packet #2: client ID 26.
+Transfer 15 credits to 15@4040... OK.
+Put 15 credits to client ID 15.
+
+Packet #3: client ID 26.
+Balance status sent.
+
+Packet #1: client ID 15.
+Balance status sent.
+
+^C 
