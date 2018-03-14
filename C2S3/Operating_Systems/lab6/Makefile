@@ -16,4 +16,4 @@ build_client_exec:
 	$(CC) $(CSTD) $(CFLAGS) $(INCLUDE) $(CLIENTSRC) -o $(CLIENTEXEC) -lzmq
 
 clean:
-	rm -f bin/lab6
+	rm -f bin/*
