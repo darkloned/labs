@@ -1,0 +1,3 @@
+[submodule "C2S3/Operating_Systems/coursework/ChatMQ"]
+	path = C2S3/Operating_Systems/coursework/ChatMQ
+	url = https://github.com/darkloned/ChatMQ
